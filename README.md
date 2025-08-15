@@ -31,6 +31,6 @@ That's it! The website is self-contained and will run directly from the file sys
 ## File Structure
 
 -   `/index.html` (and all other HTML files): The main entry points for each page.
--   `/assets/`: Contains all images and icons used throughout the site. (Note: Current images are placeholders from `https://placehold.co/` and should be replaced with the actual brand assets from "Swan Pics.zip").
+-   `/assets/`: Contains all images and icons used throughout the site.
 -   `/css/style.css`: Custom stylesheet containing brand color variables, font definitions, and overrides for Tailwind/Bootstrap defaults.
 -   `/js/main.js`: A single file containing all JavaScript for interactivity across the entire site.
