@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Promise | Swan Botanicals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Custom styles for the vertical timeline */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: var(--golden-sand);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-container.left {
+            left: 0;
+        }
+        .timeline-container.right {
+            left: 50%;
+        }
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: var(--warm-ivory);
+            border: 4px solid var(--sage-green);
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-container.right::after {
+            left: -10px;
+        }
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        @media screen and (max-width: 768px) {
+            .timeline::after { left: 31px; }
+            .timeline-container { width: 100%; padding-left: 70px; padding-right: 25px; }
+            .timeline-container.right { left: 0%; }
+            .timeline-container.left::after, .timeline-container.right::after { left: 21px; }
+        }
+    </style>
+</head>
+<body class="bg-warm-ivory text-botanical-charcoal font-body">
+    
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-warm-ivory/80 backdrop-blur-md shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/logo.svg" alt="Swan Botanicals Logo" style="height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="our-promise.html">Our Promise</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sustainability.html">Sustainability</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="cart.html" class="btn btn-outline-forest position-relative">
+                        Cart
+                        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-forest-canopy">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-12 md:py-20 text-center">
+             <div class="container">
+                <h1 class="font-heading text-5xl">Guaranteed Gentle Care</h1>
+                <p class="font-subheading text-lg max-w-3xl mx-auto mt-3">Our promise is simple: to put customer safety and satisfaction at the heart of everything we do. This is our multi-stage process to ensure every formula is ultra-gentle and effective.</p>
+            </div>
+        </section>
+        
+        <section class="pb-12 md:pb-20">
+            <div class="timeline">
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <h2 class="font-heading">Stage 1: Botanical Sourcing</h2>
+                        <p>We ethically source the finest raw botanical ingredients, verifying their purity and potency from trusted, sustainable growers.</p>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <h2 class="font-heading">Stage 2: Formulation & Purity Testing</h2>
+                        <p>Our chemists formulate without synthetic chemicals. Each batch undergoes rigorous in-house testing to ensure it is free from contaminants.</p>
+                    </div>
+                </div>
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <h2 class="font-heading">Stage 3: Dermatologist Verification</h2>
+                        <p>Formulations are sent to independent dermatologists for patch testing to verify they are hypoallergenic and safe for sensitive skin.</p>
+                    </div>
+                </div>
+                 <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <h2 class="font-heading">Stage 4: Customer Feedback Loop</h2>
+                        <p>We conduct tests with a panel of real users—our "Mother-Tested" promise—to gather feedback on gentleness and efficacy before final approval.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 md:py-20 bg-serene-mint">
+            <div class="container text-center">
+                <h2 class="font-heading text-4xl mb-8">Our Certifications</h2>
+                <div class="flex justify-center items-center gap-8 md:gap-16">
+                    <div class="text-center">
+                        <img data-src="assets/ayush-logo.svg" alt="AYUSH Certified" class="lazy h-24 mx-auto" style="filter: grayscale(100%) opacity(0.7);">
+                        <p class="font-subheading mt-2">AYUSH Licensed Facility</p>
+                    </div>
+                     <div class="text-center">
+                        <img data-src="assets/cruelty-free-logo.svg" alt="Cruelty-Free Bunny Logo" class="lazy h-24 mx-auto" style="filter: grayscale(100%) opacity(0.7);">
+                        <p class="font-subheading mt-2">Cruelty-Free</p>
+                    </div>
+                     <div class="text-center">
+                        <img data-src="assets/gmp-logo.svg" alt="GMP Certified Logo" class="lazy h-24 mx-auto" style="filter: grayscale(100%) opacity(0.7);">
+                        <p class="font-subheading mt-2">Good Manufacturing Practice</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-rich-umber text-warm-ivory/80 py-10">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Swan Botanicals</h5>
+                    <p class="text-sm">Quality crafted, botanically infused, and customer centric.</p>
+                </div>
+                <div>
+                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Our Policies</h5>
+                     <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Contact</h5>
+                    <p class="text-sm">info@swanbotanicals.com</p>
+                    <p class="text-sm">Mahatma Gandhi Inner Ring Road, Guntur</p>
+                </div>
+            </div>
+            <div class="border-t border-warm-ivory/20 mt-8 pt-6 text-center text-sm">
+                <p>&copy; <span id="current-year"></span> Swan Botanicals. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

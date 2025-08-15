@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swan Botanicals – Quality Crafted, Botanically Infused Skincare</title>
+    <meta name="description" content="Discover Swan Botanicals, where we empower safe, natural skin with the finest botanical ingredients. Inspired by a mother's love for gentle, visible results.">
+    <meta name="keywords" content="botanical skincare, natural beauty, clean beauty, cruelty-free, sustainable skincare">
+    
+    <meta property="og:title" content="Swan Botanicals – Pure, Gentle, Effective">
+    <meta property="og:description" content="Quality crafted, botanically infused, and customer-centric skincare.">
+    <meta property="og:image" content="assets/hero-background.jpg">
+    <meta property="og:url" content="https://thehouseofswan.com/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-warm-ivory text-botanical-charcoal font-body">
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-warm-ivory/80 backdrop-blur-md shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/logo.svg" alt="Swan Botanicals Logo" style="height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="our-promise.html">Our Promise</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sustainability.html">Sustainability</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="cart.html" class="btn btn-outline-forest position-relative">
+                        Cart
+                        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-forest-canopy">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative h-[80vh] flex items-center justify-center text-center text-white">
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <img data-src="assets/hero-background.jpg" alt="Lush botanical background with soft light" class="lazy absolute inset-0 w-full h-full object-cover">
+            <div class="relative z-20 container px-4">
+                <h1 class="font-heading text-5xl md:text-7xl mb-4 text-shadow">Pure. Gentle. Effective.</h1>
+                <p class="font-subheading text-xl md:text-2xl mb-6 max-w-3xl mx-auto text-shadow">"When botanical meet quality, people can’t help but notice."</p>
+                <a href="products.html" class="btn btn-primary">Shop Our Collection</a>
+            </div>
+        </section>
+
+        <section class="py-12 md:py-20 bg-serene-mint">
+            <div class="container">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl text-forest-canopy mb-2">99% Botanical, 0% Synthetic Chemicals</h3>
+                        <p class="font-body">Absolute peace of mind—no parabens, sulfates, or hidden irritants. Just pure, nature-derived goodness.</p>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl text-forest-canopy mb-2">Mother-Tested, Dermatologist-Verified</h3>
+                        <p class="font-body">Ultra-gentle, safe formulations you'd trust on your own family, backed by an AYUSH license.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 md:py-20">
+            <div class="container text-center">
+                <h2 class="font-heading text-4xl mb-3">Loved by Nature, Backed by Science</h2>
+                <p class="font-subheading text-lg mb-10 max-w-2xl mx-auto">Explore our best-sellers, crafted to deliver visible results gently.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="product-card">
+                        <img data-src="assets/product-serum.jpg" alt="Radiant Glow Serum Bottle" class="lazy w-full h-64 object-cover mb-4 rounded-lg">
+                        <h4 class="font-subheading text-xl">Radiant Glow Serum</h4>
+                        <p class="text-rich-umber mb-4">$42.00</p>
+                        <button class="btn btn-secondary add-to-cart-btn" data-id="1" data-name="Radiant Glow Serum" data-price="42.00" data-img="assets/product-serum.jpg">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img data-src="assets/product-cleanser.jpg" alt="Gentle Cloud Cleanser Bottle" class="lazy w-full h-64 object-cover mb-4 rounded-lg">
+                        <h4 class="font-subheading text-xl">Gentle Cloud Cleanser</h4>
+                        <p class="text-rich-umber mb-4">$28.00</p>
+                        <button class="btn btn-secondary add-to-cart-btn" data-id="2" data-name="Gentle Cloud Cleanser" data-price="28.00" data-img="assets/product-cleanser.jpg">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img data-src="assets/product-moisturizer.jpg" alt="Hydrating Petal Moisturizer Jar" class="lazy w-full h-64 object-cover mb-4 rounded-lg">
+                        <h4 class="font-subheading text-xl">Hydrating Petal Moisturizer</h4>
+                        <p class="text-rich-umber mb-4">$35.00</p>
+                        <button class="btn btn-secondary add-to-cart-btn" data-id="3" data-name="Hydrating Petal Moisturizer" data-price="35.00" data-img="assets/product-moisturizer.jpg">Add to Cart</button>
+                    </div>
+                     <div class="product-card">
+                        <img data-src="assets/product-face-oil.jpg" alt="Nourishing Face Oil Bottle" class="lazy w-full h-64 object-cover mb-4 rounded-lg">
+                        <h4 class="font-subheading text-xl">Nourishing Face Oil</h4>
+                        <p class="text-rich-umber mb-4">$50.00</p>
+                        <button class="btn btn-secondary add-to-cart-btn" data-id="4" data-name="Nourishing Face Oil" data-price="50.00" data-img="assets/product-face-oil.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 md:py-20 bg-golden-sand/30">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <img data-src="assets/founder-image.jpg" alt="Founder of Swan Botanicals in a natural setting" class="lazy rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="font-heading text-4xl mb-4">Inspired by a Mother's Love</h2>
+                        <p class="font-body mb-4 leading-relaxed">Swan Botanicals was born from an unwavering desire to create skincare that's safe, honest, and nurturing. Inspired by love and loss, every product reflects a promise—pure, botanical care without fear or side effects, crafted to heal gently and visibly.</p>
+                        <a href="about.html" class="btn btn-primary">Read Our Full Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 md:py-20 bg-forest-canopy text-warm-ivory">
+            <div class="container text-center">
+                <h2 class="font-heading text-4xl mb-3">Join The Flock</h2>
+                <p class="font-subheading text-lg mb-6 max-w-2xl mx-auto">Subscribe for exclusive offers, skincare tips, and a first look at new botanical blends.</p>
+                <form id="newsletter-form" class="max-w-md mx-auto flex">
+                    <input type="email" id="newsletter-email" class="form-control me-2" placeholder="Enter your email" required aria-label="Email for newsletter">
+                    <button type="submit" class="btn btn-primary-light">Subscribe</button>
+                </form>
+                <div id="newsletter-feedback" class="mt-3"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-rich-umber text-warm-ivory/80 py-10">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Swan Botanicals</h5>
+                    <p class="text-sm">Quality crafted, botanically infused, and customer centric.</p>
+                </div>
+                <div>
+                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Our Policies</h5>
+                     <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Contact</h5>
+                    <p class="text-sm">info@swanbotanicals.com</p>
+                    <p class="text-sm">Mahatma Gandhi Inner Ring Road, Guntur</p>
+                </div>
+            </div>
+            <div class="border-t border-warm-ivory/20 mt-8 pt-6 text-center text-sm">
+                <p>&copy; <span id="current-year"></span> Swan Botanicals. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
