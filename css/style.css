@@ -226,17 +226,27 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .cart-item {
     display: flex;
     align-items: center;
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--golden-sand);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     gap: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .cart-item-img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
     flex-shrink: 0;
+    border: 2px solid var(--serene-mint);
 }
 
 .cart-item-details {
@@ -245,77 +255,138 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .cart-item-details h4 {
     font-size: 1.25rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--forest-canopy);
+}
+
+.cart-item-details .text-rich-umber {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .cart-item-actions {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 0.75rem;
+    gap: 1rem;
 }
 
 .cart-quantity-input {
-    width: 80px;
+    width: 70px;
     text-align: center;
+    font-weight: 600;
+    border: 2px solid var(--golden-sand);
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.cart-quantity-input:focus {
+    border-color: var(--forest-canopy);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(42, 77, 58, 0.1);
 }
 
 .cart-totals {
     display: flex;
     justify-content: flex-end;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 .cart-totals-box {
     width: 100%;
-    max-width: 350px;
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 400px;
+    background: linear-gradient(135deg, white 0%, var(--serene-mint) 100%);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(42, 77, 58, 0.1);
 }
 
 .cart-totals-box h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--forest-canopy);
 }
 
 .cart-subtotal-row {
     display: flex;
     justify-content: space-between;
     font-family: var(--font-subheading);
-    font-size: 1.125rem;
-    border-bottom: 1px solid var(--golden-sand);
-    padding-bottom: 0.75rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(42, 77, 58, 0.15);
+    margin-bottom: 1rem;
+}
+
+.cart-subtotal-row span:last-child {
+    font-weight: 700;
+    color: var(--forest-canopy);
 }
 
 .btn-outline-danger {
-    color: #dc3545;
-    border-color: #dc3545;
-    background-color: transparent;
+    color: #c53030;
+    border: 2px solid #fed7d7;
+    background-color: #fff5f5;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.2s ease;
 }
 
 .btn-outline-danger:hover {
     color: white;
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #c53030;
+    border-color: #c53030;
+    transform: scale(1.02);
 }
 
-@media (max-width: 576px) {
+/* Cart empty state */
+#cart-empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+#cart-empty p {
+    color: var(--rich-umber);
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
     .cart-item {
         flex-wrap: wrap;
+        padding: 1rem;
+    }
+    
+    .cart-item-img {
+        width: 80px;
+        height: 80px;
     }
     
     .cart-item-details {
-        width: calc(100% - 116px);
+        width: calc(100% - 96px);
+    }
+    
+    .cart-item-details h4 {
+        font-size: 1rem;
     }
     
     .cart-item-actions {
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px dashed var(--golden-sand);
+    }
+    
+    .cart-totals {
+        justify-content: center;
     }
     
     .cart-totals-box {

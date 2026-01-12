@@ -43,14 +43,23 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h1 class="font-heading" style="font-size: 3rem;">Your Shopping Cart</h1>
+                <p class="font-subheading text-rich-umber mt-2">Review your items and proceed to checkout</p>
             </div>
 
-            <div id="cart-container">
-            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="cart-container">
+                    </div>
 
-            <div id="cart-empty" class="text-center hidden">
-                <p class="font-subheading" style="font-size: 1.25rem;">Your cart is currently empty.</p>
-                <a href="products.html" class="btn btn-primary mt-4">Continue Shopping</a>
+                    <div id="cart-empty" class="hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" viewBox="0 0 16 16" style="color: var(--sage-green); margin-bottom: 1.5rem;">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <p class="font-subheading" style="font-size: 1.5rem; margin-bottom: 0.5rem;">Your cart is empty</p>
+                        <p style="color: var(--rich-umber); margin-bottom: 1.5rem;">Looks like you haven't added any items yet.</p>
+                        <a href="products.html" class="btn btn-primary">Explore Products</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
