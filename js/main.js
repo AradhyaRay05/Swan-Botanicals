@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="cart-item-details">
                         <h4 class="font-subheading">${item.name}</h4>
                         <p class="cart-item-meta">Natural • Cruelty-Free</p>
-                        <p class="cart-item-price">$${item.price.toFixed(2)}</p>
+                        <p class="cart-item-price">₹${item.price.toFixed(2)}</p>
                     </div>
                     <div class="cart-item-actions">
                         <div class="quantity-wrapper">
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <input type="number" value="${item.quantity}" min="1" class="form-control cart-quantity-input" aria-label="Quantity for ${item.name}">
                             <button class="quantity-btn quantity-increase" aria-label="Increase quantity">+</button>
                         </div>
-                        <p class="cart-item-total">$${(item.price * item.quantity).toFixed(2)}</p>
+                        <p class="cart-item-total">₹${(item.price * item.quantity).toFixed(2)}</p>
                         <button class="cart-remove-btn" aria-label="Remove ${item.name} from cart">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
@@ -160,30 +160,27 @@ document.addEventListener('DOMContentLoaded', () => {
             cartContainer.innerHTML += cartItemHTML;
         });
 
-        const shipping = subtotal >= 50 ? 0 : 5.99;
+        const shipping = subtotal >= 500 ? 0 : 49;
         const total = subtotal + shipping;
         
         const cartTotalsHTML = `
             <div class="cart-sidebar">
                 <div class="cart-promo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                    </svg>
-                    <span>${subtotal >= 50 ? '🎉 You qualify for FREE shipping!' : `Add $${(50 - subtotal).toFixed(2)} more for FREE shipping`}</span>
+                    <span>${subtotal >= 500 ? 'Congratulations! You qualify for FREE shipping!' : `Add ₹${(500 - subtotal).toFixed(2)} more for FREE shipping`}</span>
                 </div>
                 <div class="cart-totals-box">
                     <h3 class="font-heading">Order Summary</h3>
                     <div class="cart-summary-row">
                         <span>Subtotal</span>
-                        <span>$${subtotal.toFixed(2)}</span>
+                        <span>₹${subtotal.toFixed(2)}</span>
                     </div>
                     <div class="cart-summary-row">
                         <span>Shipping</span>
-                        <span>${shipping === 0 ? '<span class="free-shipping">FREE</span>' : '$' + shipping.toFixed(2)}</span>
+                        <span>${shipping === 0 ? '<span class="free-shipping">FREE</span>' : '₹' + shipping.toFixed(2)}</span>
                     </div>
                     <div class="cart-summary-row cart-total-row">
                         <span>Total</span>
-                        <span id="cart-subtotal">$${total.toFixed(2)}</span>
+                        <span id="cart-subtotal">₹${total.toFixed(2)}</span>
                     </div>
                     <button class="btn btn-primary w-100 checkout-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
