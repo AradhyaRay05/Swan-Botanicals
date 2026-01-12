@@ -874,3 +874,37 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     color: #999;
     font-size: 0.875rem;
 }
+
+/* ==========================================
+   FORM CONTROLS - BRAND STYLING
+   ========================================== */
+.form-control:focus {
+    border-color: var(--forest-canopy);
+    box-shadow: 0 0 0 0.2rem rgba(42, 77, 58, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: var(--forest-canopy);
+    border-color: var(--forest-canopy);
+}
+
+.form-check-input:focus {
+    border-color: var(--forest-canopy);
+    box-shadow: 0 0 0 0.2rem rgba(42, 77, 58, 0.25);
+}
+
+.form-switch .form-check-input:checked {
+    background-color: var(--forest-canopy);
+    border-color: var(--forest-canopy);
+}
+
+.form-switch .form-check-input {
+    width: 3em;
+    height: 1.5em;
+    cursor: pointer;
+}
+
+.form-switch .form-check-label {
+    cursor: pointer;
+    padding-left: 0.5rem;
+}
