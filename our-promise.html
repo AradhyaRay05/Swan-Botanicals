@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
     <style>
         /* Custom styles for the vertical timeline */
@@ -72,7 +71,7 @@
 <body class="bg-warm-ivory text-botanical-charcoal font-body">
     
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-warm-ivory/80 backdrop-blur-md shadow-sm">
+        <nav class="navbar navbar-expand-lg shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/logo.svg" alt="Swan Botanicals Logo" style="height: 40px;">
@@ -99,14 +98,14 @@
     </header>
 
     <main>
-        <section class="py-12 md:py-20 text-center">
+        <section class="section-padding text-center">
              <div class="container">
-                <h1 class="font-heading text-5xl">Guaranteed Gentle Care</h1>
-                <p class="font-subheading text-lg max-w-3xl mx-auto mt-3">Our promise is simple: to put customer safety and satisfaction at the heart of everything we do. This is our multi-stage process to ensure every formula is ultra-gentle and effective.</p>
+                <h1 class="font-heading" style="font-size: 3rem;">Guaranteed Gentle Care</h1>
+                <p class="font-subheading" style="font-size: 1.125rem; max-width: 800px; margin: 0.75rem auto 0;">Our promise is simple: to put customer safety and satisfaction at the heart of everything we do. This is our multi-stage process to ensure every formula is ultra-gentle and effective.</p>
             </div>
         </section>
         
-        <section class="pb-12 md:pb-20">
+        <section class="pb-5">
             <div class="timeline">
                 <div class="timeline-container left">
                     <div class="timeline-content">
@@ -135,62 +134,61 @@
             </div>
         </section>
 
-        <section class="py-12 md:py-20 bg-serene-mint">
+        <section class="section-padding bg-serene-mint">
             <div class="container text-center">
-                <h2 class="font-heading text-4xl mb-8">Our Certifications</h2>
-                <div class="flex justify-center items-center gap-8 md:gap-16">
-                    <div class="text-center">
-                        <img data-src="assets/ayush-logo.svg" alt="AYUSH Certified" class="lazy h-24 mx-auto" style="filter: grayscale(100%) opacity(0.7);">
-                        <p class="font-subheading mt-2">AYUSH Licensed Facility</p>
+                <h2 class="font-heading" style="font-size: 2.5rem; margin-bottom: 2rem;">Our Certifications</h2>
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-4 text-center">
+                        <img src="assets/SAN_8641.jpg" alt="AYUSH Certified" class="rounded mb-3" style="height: 120px; width: 120px; object-fit: cover; filter: grayscale(50%);">
+                        <p class="font-subheading">AYUSH Licensed Facility</p>
                     </div>
-                     <div class="text-center">
-                        <img data-src="assets/cruelty-free-logo.svg" alt="Cruelty-Free Bunny Logo" class="lazy h-24 mx-auto" style="filter: grayscale(100%) opacity(0.7);">
-                        <p class="font-subheading mt-2">Cruelty-Free</p>
+                     <div class="col-md-4 text-center">
+                        <img src="assets/SAN_8644.jpg" alt="Cruelty-Free Bunny Logo" class="rounded mb-3" style="height: 120px; width: 120px; object-fit: cover; filter: grayscale(50%);">
+                        <p class="font-subheading">Cruelty-Free</p>
                     </div>
-                     <div class="text-center">
-                        <img data-src="assets/gmp-logo.svg" alt="GMP Certified Logo" class="lazy h-24 mx-auto" style="filter: grayscale(100%) opacity(0.7);">
-                        <p class="font-subheading mt-2">Good Manufacturing Practice</p>
+                     <div class="col-md-4 text-center">
+                        <img src="assets/SAN_8657.jpg" alt="GMP Certified Logo" class="rounded mb-3" style="height: 120px; width: 120px; object-fit: cover; filter: grayscale(50%);">
+                        <p class="font-subheading">Good Manufacturing Practice</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-rich-umber text-warm-ivory/80 py-10">
+    <footer class="footer">
         <div class="container">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="footer-grid">
                 <div>
-                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Swan Botanicals</h5>
-                    <p class="text-sm">Quality crafted, botanically infused, and customer centric.</p>
+                    <h5 class="font-subheading">Swan Botanicals</h5>
+                    <p style="font-size: 0.875rem;">Quality crafted, botanically infused, and customer centric.</p>
                 </div>
                 <div>
-                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Quick Links</h5>
-                    <ul class="space-y-2">
+                    <h5 class="font-subheading">Quick Links</h5>
+                    <ul>
                         <li><a href="about.html" class="footer-link">About Us</a></li>
                         <li><a href="contact.html" class="footer-link">Contact</a></li>
                         <li><a href="faq.html" class="footer-link">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Our Policies</h5>
-                     <ul class="space-y-2">
+                    <h5 class="font-subheading">Our Policies</h5>
+                    <ul>
                         <li><a href="#" class="footer-link">Shipping & Returns</a></li>
                         <li><a href="#" class="footer-link">Privacy Policy</a></li>
                         <li><a href="#" class="footer-link">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h5 class="font-subheading text-lg mb-3 text-warm-ivory">Contact</h5>
-                    <p class="text-sm">info@swanbotanicals.com</p>
-                    <p class="text-sm">Mahatma Gandhi Inner Ring Road, Guntur</p>
+                    <h5 class="font-subheading">Contact</h5>
+                    <p style="font-size: 0.875rem;">info@swanbotanicals.com</p>
+                    <p style="font-size: 0.875rem;">Mahatma Gandhi Inner Ring Road, Guntur</p>
                 </div>
             </div>
-            <div class="border-t border-warm-ivory/20 mt-8 pt-6 text-center text-sm">
+            <div class="footer-bottom">
                 <p>&copy; <span id="current-year"></span> Swan Botanicals. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
