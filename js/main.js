@@ -133,12 +133,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="cart-item" data-id="${item.id}">
                     <img src="${item.img}" alt="${item.name}" class="cart-item-img">
                     <div class="cart-item-details">
-                        <h4 class="font-subheading text-lg">${item.name}</h4>
+                        <h4 class="font-subheading">${item.name}</h4>
                         <p class="text-rich-umber">$${item.price.toFixed(2)}</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <input type="number" value="${item.quantity}" min="1" class="form-control w-20 text-center cart-quantity-input" aria-label="Quantity for ${item.name}">
-                        <button class="btn btn-sm btn-outline-danger cart-remove-btn" aria-label="Remove ${item.name} from cart">Remove</button>
+                    <div class="cart-item-actions">
+                        <input type="number" value="${item.quantity}" min="1" class="form-control cart-quantity-input" aria-label="Quantity for ${item.name}">
+                        <button class="btn btn-outline-danger btn-sm cart-remove-btn" aria-label="Remove ${item.name} from cart">Remove</button>
                     </div>
                 </div>
             `;
@@ -146,14 +146,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         const cartTotalsHTML = `
-            <div class="mt-8 flex justify-end">
-                <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="font-heading text-2xl mb-4">Cart Total</h3>
-                    <div class="flex justify-between font-subheading text-lg border-b pb-2 mb-2">
+            <div class="cart-totals">
+                <div class="cart-totals-box">
+                    <h3 class="font-heading">Cart Total</h3>
+                    <div class="cart-subtotal-row">
                         <span>Subtotal</span>
                         <span id="cart-subtotal">$${subtotal.toFixed(2)}</span>
                     </div>
-                    <button class="btn btn-primary w-full mt-4">Proceed to Checkout</button>
+                    <button class="btn btn-primary w-100 mt-3">Proceed to Checkout</button>
                 </div>
             </div>
         `;
