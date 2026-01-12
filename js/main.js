@@ -279,14 +279,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterContainer = document.getElementById('product-filters');
     const productGrid = document.getElementById('product-grid');
     if (filterContainer && productGrid) {
-        const productCards = productGrid.querySelectorAll('.product-card');
+        const productColumns = productGrid.querySelectorAll('[class*="col-"]');
         filterContainer.addEventListener('click', (e) => {
             if (e.target.tagName === 'BUTTON') {
                 document.querySelector('.btn-filter.active').classList.remove('active');
                 e.target.classList.add('active');
                 const filter = e.target.dataset.filter;
-                productCards.forEach(card => {
-                    card.style.display = (filter === 'all' || card.dataset.category === filter) ? 'block' : 'none';
+                productColumns.forEach(col => {
+                    const card = col.querySelector('.product-card');
+                    if (card) {
+                        const category = card.dataset.category;
+                        col.style.display = (filter === 'all' || category === filter) ? '' : 'none';
+                    }
                 });
             }
         });

@@ -760,3 +760,117 @@ h1, h2, h3, h4, h5, h6, .font-heading {
         border-top: 1px solid var(--golden-sand);
     }
 }
+
+/* ==========================================
+   ACCOUNT SETTINGS PAGE
+   ========================================== */
+.settings-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--serene-mint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--forest-canopy);
+}
+
+.settings-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.settings-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    color: var(--botanical-charcoal);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.settings-nav-link:hover {
+    background-color: var(--serene-mint);
+    color: var(--forest-canopy);
+}
+
+.settings-nav-link.active {
+    background-color: var(--forest-canopy);
+    color: white;
+}
+
+.settings-nav hr {
+    margin: 0.5rem 0;
+    border-color: var(--golden-sand);
+}
+
+/* ==========================================
+   AUTH PAGE STYLING
+   ========================================== */
+.auth-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.auth-tabs {
+    border: none;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.auth-tabs .nav-link {
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    color: var(--botanical-charcoal);
+    font-weight: 600;
+    background-color: var(--warm-ivory);
+}
+
+.auth-tabs .nav-link.active {
+    background-color: var(--forest-canopy);
+    color: white;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    color: var(--botanical-charcoal);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.social-btn:hover {
+    background-color: var(--warm-ivory);
+    border-color: var(--forest-canopy);
+}
+
+.divider-text {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.divider-text::before,
+.divider-text::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.divider-text span {
+    padding: 0 1rem;
+    color: #999;
+    font-size: 0.875rem;
+}
